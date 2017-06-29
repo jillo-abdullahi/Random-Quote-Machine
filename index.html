@@ -16,46 +16,22 @@
   </head>
   <body>
 
-    <!--Naviagation bar-->
-    <!--This here is the navigation bar-->
-  <nav class="navbar navbar-default navbar-fixed-top top-nav" role="navigation">
-    <div class="container-fluid">
-	<!--navbar header-->
-	  <div class="navbar-header">
-	    <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	      <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-
-		<a href="#" class="navbar-left"><img src="./images/logo.png" style="height: 40px; width: 40px;"></a>
-    <a class="navbar-brand" href="#Home">Awesome Quotes</a>
-	 </div>
-	 <!--navbar menu items-->
-	 <div class="collapse navbar-collapse" id="myNavbar">
-	   <ul class="nav navbar-nav navbar-right">
-		<li><a href="#contact">Contact</a></li>
-	  </ul>
-	</div>
-	</div>
-  </nav>
-    <!--End of navigation bar-->
-
-    <div class="parallax-top"></div>
+  <div class="parallax-top"></div>
 	  <div class="section-quote">
 		  <div class="container">
 		    <div class="row">
 			  <div class="col-sm-10">
     				<div class="well well-lg">
-    					<h3 id="quote-text">“You Can Develop Any Habit Or Thought Or Behavior That You Consider Desirable Or Necessary.” - Brian Tracy
+    					<h3 id="quote-text"></i>“You Can Develop Any Habit Or Thought Or Behavior That You Consider Desirable Or Necessary.” - Brian Tracy
     						</h3>
+                <p id="author-text"></p>
     				</div>
 			  </div>
         <div class="col-sm-2">
             <div class="section-social-buttons">
                 <ul class="list list-social-buttons" style="list-style: none;">
                     <li>
-                        <a onclick="tweetQuote()" class="btn btn-success btn-md" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a id="tweet-quote-btn" class="btn btn-success btn-md" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
                     </li>
                     <li>
                         <a href="http://www.facebook.com/share.php?u=https://jillo-abdullahi.github.io/Random-Quote-Machine/" target="_blank" class="btn btn-success btn-md" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
@@ -75,6 +51,6 @@
     <footer>
       <p>Built By: <a href="https://github.com/jillo-abdullahi" style="text-decoration: none;">Jillo Abdullahi</a></p>
     </footer>
-	  <script src="./js/tweet.js"></script>
+	  <script src="./js/main.js"></script>
 	</body>
 </html>
