@@ -45,10 +45,18 @@ $(document).ready(function(){
 
       window.open(tweetUrl);
 }
+//function to change background color on button click
+function changeBgColor(){
+  var color = 'rgb(' + Math.floor(Math.random() * 255) + ','
+                   + Math.floor(Math.random() * 255) + ','
+                   + Math.floor(Math.random() * 255) + ')';
+    $(".section-quote").css('background-color',color);
+}
 //what happens when the next quote button gets clicked.
 $("#next-quote-btn").on('click',function(){
 
   getQuote();
+  changeBgColor();
   //changeBackground();
 
 });
