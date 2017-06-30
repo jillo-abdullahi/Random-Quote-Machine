@@ -16,17 +16,19 @@
 	background-size: cover;
 	background-image: url("https://source.unsplash.com/random");
 }*/
-
+body {
+	font-family: 'Handlee';
+}
 .section-quote {
 	border: 1px solid #000;
 	padding-top: 10rem;
-	background: #2c3e50 url("../images/main.png") no-repeat center center;
+	background: #2ecc71 url("../images/main.png") no-repeat center center;
 	background-size: 100% 100%;
 	width: 100%;
 	height: 600px;
 }
 
-.well {
+.quote-container {
 	margin: auto;
 	opacity: 0.5;
 	width: 60%;
@@ -34,7 +36,7 @@
 	border: 1px solid black;
 	text-align: center;
 }
-.well h3 {
+.quote-container h3 {
 	color: #000;
 	font-weight: bold;
 }
@@ -46,7 +48,27 @@ footer{
 	color: #5cb85c;
 	text-align: center;
 }
+.quote-buttons .well {
+	margin: auto;
+	width: 60%;
+	background-color: #fff;
+	border: 1px solid black;
+}
+/*Changing some font sizes*/
+.btn {
+	font-size: 1.2em;
+}
 #author-text {
-	float:right;
-	padding-bottom: 10px;
+	text-align: center;
+	font-size: 1em;
+}
+#next-quote-btn {
+	float: right;
+}
+/*Media queries*/
+@media only screen and (max-width: 800px ) {
+	.button-well {
+		display: block;
+
+	}
 }
