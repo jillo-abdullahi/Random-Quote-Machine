@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  getQuote();
 
   //function to change the background image on button click.
   function changeBackground(){
@@ -9,6 +10,7 @@ $(document).ready(function(){
       console.log(imageurl);
 
       $(".parallax-bottom").css('background-image', 'url('+imageurl+')');
+      $(".parallax-top").css('background-image', 'url('+imageurl+')');
     });
   }
 
