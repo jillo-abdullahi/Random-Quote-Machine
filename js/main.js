@@ -2,7 +2,7 @@ $(document).ready(function(){
   getQuote();
 
   //function to change the background image on button click.
-  function changeBackground(){
+  /*function changeBackground(){
 
     var requri = "https://api.unsplash.com/photos/random?client_id=336b527b2e18d045045820b78062b95c825376311326b2a08f9b93eef7efc07b";
     $.getJSON(requri, function(result){
@@ -12,7 +12,7 @@ $(document).ready(function(){
       $(".parallax-bottom").css('background-image', 'url('+imageurl+')');
       $(".parallax-top").css('background-image', 'url('+imageurl+')');
     });
-  }
+  }*/
 
 //function to get next quote
   function getQuote(){
@@ -22,8 +22,14 @@ $(document).ready(function(){
       var quote = results.quoteText;
       var author = results.quoteAuthor;
 
-      document.getElementById("quote-text").innerHTML = "<i class='fa fa-quote-left' aria-hidden='true'>"+" "+quote;
-      document.getElementById("author-text").innerHTML = " - "+author;
+      if(author==""){
+        document.getElementById("author-text").innerHTML = "<i> - Unknown</i>";
+      }else{
+        document.getElementById("quote-text").innerHTML = "<i class='fa fa-quote-left' aria-hidden='true'></i>"+" "+quote;
+        document.getElementById("author-text").innerHTML = "<i>"+" - "+author+"</i>";
+      }
+
+
     });
   }
 
@@ -43,12 +49,13 @@ $(document).ready(function(){
 $("#next-quote-btn").on('click',function(){
 
   getQuote();
-  changeBackground();
+  //changeBackground();
 
 });
 //what happens when the tweet button gets clicked.
 $("#tweet-quote-btn").on('click',function(){
   tweetQuote();
 });
+document.getElementById("quote-text").css('font-family','Lato');
 
 });
