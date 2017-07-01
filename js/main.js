@@ -1,5 +1,6 @@
 $(document).ready(function(){
   getQuote();
+  changeBgColor();
 
   //function to change the background image on button click.
   /*function changeBackground(){
