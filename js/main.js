@@ -1,5 +1,6 @@
 $(document).ready(function(){
   getQuote();
+  changeBgColor();
 
   //function to change the background image on button click.
   /*function changeBackground(){
@@ -51,6 +52,7 @@ function changeBgColor(){
                    + Math.floor(Math.random() * 255) + ','
                    + Math.floor(Math.random() * 255) + ')';
     $(".section-quote").css('background-color',color);
+
 }
 //what happens when the next quote button gets clicked.
 $("#next-quote-btn").on('click',function(){
