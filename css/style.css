@@ -1,23 +1,8 @@
-/*.parallax-top{
-	min-height: 300px;
-	opacity: 0.5;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("https://source.unsplash.com/random");
-}
-.parallax-bottom{
-	min-height: 300px;
-	opacity: 0.5;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("https://source.unsplash.com/random");
-}*/
-body {
-	font-family: 'Handlee',sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body, html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Ubuntu',sans-serif;
 }
 .section-quote {
 	border: 1px solid #000;
@@ -25,7 +10,7 @@ body {
 	background: #2ecc71 url("../images/main.png") no-repeat center center;
 	background-size: 100% 100%;
 	width: 100%;
-	height: 600px;
+	height: 100%;
 }
 
 .quote-container {
@@ -55,6 +40,23 @@ footer{
 /*Changing some font sizes*/
 .btn {
 	font-size: 1em;
+	outline: none;
+	box-shadow:
+          1px 1px #000,
+          2px 2px #000,
+		  3px 3px #000;
+	transition: all .3s ease-in-out;
+}
+
+.btn:active{
+	transform: translate(2px, 2px);
+	outline: none;
+	box-shadow: none;
+}
+
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+	outline: none !important;
 }
 #author-text {
 	text-align: center;
